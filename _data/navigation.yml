@@ -1,0 +1,40 @@
+# main links
+main:
+  - title: "Home"
+    url: https://amsomad.github.io/
+
+  - title: "Category"
+    url: /categories/
+    
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
+
+# sidebar navigation (categories)
+categories:
+- title: 개발
+  children:
+    - title: "자바"
+      url: /categories/java/
+    - title: "스프링프레임워크"
+      url: /categories/spring/
+    - title: "자료구조"
+      url: /categories/data-structure/
+    - title: "서버"
+      url: /categories/server/
+    - title: "데이터베이스"
+      url: /categories/db/
+
+- title: Web
+  children:
+    - title: "자바스크립트"
+      url: /categories/javascript/
+    - title: "라이브러리"
+      url: /categories/librery/
+    - title: "doc"
+      url: /categories/doc/
+    - title: "GIS"
+      url: /categories/gis/
