@@ -15,6 +15,11 @@ main:
 
 # sidebar navigation (categories)
 categories:
+- title: 소소한 이야기
+  children:
+    - title: "나의이야기"
+      url: /categories/story/
+
 - title: 개발
   children:
     - title: "자바"
