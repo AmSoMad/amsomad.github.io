@@ -7,10 +7,55 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+
+// $sans-serif: 'Noto Sans KR';
+$sans-serif: 'CookieRunOTF-Bold';
+// $monospace: 'Ubuntu Mono';
+$monospace: 'CookieRun-Regular';
+
+$type-size-4-5: 1.12em !default; // Ubuntu Mono is a bit small
+
 // "CookieRun-Regular"
 @font-face {
     font-family: 'CookieRun-Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face { 
+  font-family: 'CookieRunOTF-Bold'; 
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR|Ubuntu+Mono);
+@import url(https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff);
+
+// https://github.com/mmistakes/minimal-mistakes/issues/1219
+html {
+  font-size: 12px; // change to whatever
+  
+  @include breakpoint($medium) {
+    font-size: 14px; // change to whatever
+  }
+
+  @include breakpoint($large) {
+    font-size: 16px; // change to whatever
+  }
+
+  @include breakpoint($x-large) {
+    font-size: 18px; // change to whatever
+  }
+}
+
+.highlight {
+  font-family: $monospace;
+  font-size: $type-size-4-5;
+}
+
+.language-plaintext {
+  font-family: $monospace;
+  font-size: $type-size-5;
+  background: #98ddde;
 }
