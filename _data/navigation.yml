@@ -19,6 +19,8 @@ categories:
   children:
     - title: "나의이야기"
       url: /categories/story/
+    - title: "개발이야기"
+      url: /categories/devstory/
 
 - title: 개발
   children:
