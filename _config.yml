@@ -29,7 +29,7 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
                            # 폴백일 때 보일 이미지입니다. "assets/images/"로 연결됩니다.
 logo                     : "/assets/logo.ico/favicon-32x32.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png" 
                            #화면에 보여지는 logo 이미지입니다. "assets/images"로 세팅합니다.
-masthead_title           : "내 머리는 못믿는다." # overrides the website title displayed in the masthead, use " " for no title  
+masthead_title           : "내 머리는 못 믿는다." # overrides the website title displayed in the masthead, use " " for no title  
                            # 화면 title 입니다.
 breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
