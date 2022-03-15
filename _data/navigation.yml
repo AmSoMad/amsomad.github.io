@@ -26,7 +26,7 @@ categories:
   children:
     - title: "자바"
       url: /categories/java/
-    - title: "스프링프레임워크"
+    - title: "Spring"
       url: /categories/spring/
     - title: "자료구조"
       url: /categories/data-structure/
