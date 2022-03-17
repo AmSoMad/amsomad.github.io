@@ -8,10 +8,8 @@
 @import "minimal-mistakes"; // main partials
 
 
-// $sans-serif: 'Noto Sans KR';
-$sans-serif: 'CookieRunOTF-Bold';
-// $monospace: 'Ubuntu Mono';
-$monospace: 'CookieRun-Regular';
+$sans-serif: 'Noto Sans KR';
+$monospace: 'Ubuntu Mono';
 
 $type-size-4-5: 1.12em !default; // Ubuntu Mono is a bit small
 
@@ -29,6 +27,14 @@ $type-size-4-5: 1.12em !default; // Ubuntu Mono is a bit small
   font-weight: normal; 
   font-style: normal; 
 }
+@font-face {
+  font-family: 'LeeSeoyun';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@import url(https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff);
+
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR|Ubuntu+Mono);
 @import url(https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff);
 
