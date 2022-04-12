@@ -25,7 +25,7 @@ categories:
 - title: 개발
   children:
     - title: "C#"
-      url: /categories/c#/
+      url: /categories/csharp/
     - title: "자바"
       url: /categories/java/
     - title: "Spring"

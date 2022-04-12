@@ -1,7 +1,7 @@
 ---
 title: "C#"
 layout: category
-permalink: /categories/c#/
+permalink: /categories/csharp/
 author_profile: true
 taxonomy: C#
 sidebar:
