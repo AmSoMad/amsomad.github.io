@@ -21,6 +21,8 @@ categories:
       url: /categories/story/
     - title: "개발이야기"
       url: /categories/devstory/
+    - title: "산업이야기"
+      url: /categories/industrial/
 
 - title: 개발
   children:
