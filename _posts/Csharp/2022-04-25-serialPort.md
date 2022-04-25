@@ -26,7 +26,7 @@ last_modified_at: 2022-04-25
 
 ---
 
-```C#
+```cs
 using System.IO.Ports;
 
     public partial class Form1 : MetroFramework.Forms.MetroForm{
@@ -153,14 +153,14 @@ using System.IO.Ports;
 
 주의사항이있다.
 
-```C#
+```cs
             serialPort1.DataReceived += new SerialDataReceivedEventHandler(serialPort1_DataReceived);
             ///이게좀 핵심이다. 
 ```
 이벤트 핸들러가 DialogForm 으로 이동해서 계속 스캔을 해야할경우 <br>
 핸들러를 빼서 해당 DialogForm 에 넣어주고 <br>
 모달리스폼에서 본래 Control로 올경우 다시 빼서 넣어줘야한다. <br>
-```C#
+```cs
             serialPort1.DataReceived -= new SerialDataReceivedEventHandler(serialPort1_DataReceived);
             /// 빼고 다시 넣어주고~
 ```
