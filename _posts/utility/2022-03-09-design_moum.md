@@ -257,6 +257,50 @@ last_modified_at: 2022-04-11
 > 많은사이트에서 쓰이고 있다.<br>
 > github : [https://github.com/airbnb/lottie](https://github.com/airbnb/lottie)
 
+## TypeIt.js
+
+> [https://www.typeitjs.com/](https://www.typeitjs.com/)
+> 
+> 타이핑하듯 입력동작보여주는 라이브러리<br>
+> 해당라이브러리는 상용으로 쓰기에는 US. 44달러 약 5만원정도 지불을해야한다. <br>
+> 하나하나 입력해나가는 모션이 너무 이쁘고 그럴싸해보인다. <br>
+> 문서도 정리가 잘되어있어서 영어를 잘모르더라도 보기편하다 딱쉽다 쓰기 <br>
+> 또한 미리 키보드타이핑한것을 자동으로 함수까지 만들어준다. <br>
+
+```js
+new TypeIt("#element", { 
+    lifeLike: false, 
+    speed: 0 
+})
+	.move(1, {speed: 0})
+	.delete(1)
+	.type("a")
+	.pause(680)
+	.type("m")
+	.pause(121)
+	.type("s")
+	.pause(112)
+	.type("o")
+	.pause(254)
+	.type("m")
+	.pause(72)
+	.type("a")
+	.pause(97)
+	.type("d")
+	.go();
+```
+>[https://www.typeitjs.com/build-your-own](https://www.typeitjs.com/build-your-own) <br>
+>여기서 내가 입력한 레코딩을 그대로보여준다.
+
+## scroll-out.js
+
+> [https://scroll-out.github.io/](https://scroll-out.github.io/)
+>
+> 스크롤바 혹은 마우스휠로 스크롤이동시 보여줄 효과를 꾸며준다.<br>
+> Codepen<br>
+> codepen에서 자주볼수있는 애니메이션처리 라이브러리 이니 현재 자주쓰이는듯 하다
+> github : [https://github.com/juliangarnier/anime](https://github.com/juliangarnier/anime)
+
 
 #
 
