@@ -297,9 +297,9 @@ new TypeIt("#element", {
 > [https://scroll-out.github.io/](https://scroll-out.github.io/)
 >
 > 스크롤바 혹은 마우스휠로 스크롤이동시 보여줄 효과를 꾸며준다.<br>
-> Codepen<br>
-> codepen에서 자주볼수있는 애니메이션처리 라이브러리 이니 현재 자주쓰이는듯 하다
-> github : [https://github.com/juliangarnier/anime](https://github.com/juliangarnier/anime)
+> Codepen에서 [scrollout](https://codepen.io/search/pens?q=scrollout) 이라 검색하니 딱 뭔지 알겠다<br>
+> 스크롤 내리면서이미지나 텍스트가 사라지거나 보여지는 효과들 <br>
+> github : [https://github.com/scroll-out/scroll-out](https://github.com/scroll-out/scroll-out)
 
 
 #
