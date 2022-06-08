@@ -16,3 +16,8 @@ $lightpurple-btn-color-border : #FCFCFE !default;
      color: $lightpurple-color-font;
    }
  }
+
+.pagination--pager :hover {
+   background-color : $lightpurple-color-font;
+   color : $lightpurple-btn-color-border;
+}
