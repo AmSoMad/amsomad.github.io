@@ -123,13 +123,13 @@ author:
       # url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      url: "https://www.facebook.com/yoonsik.lim/"
+      # url: "https://www.facebook.com/yoonsik.lim/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/AmSoMad"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/yoonsiklim/?hl=ko"
+      # url: "https://www.instagram.com/yoonsiklim/?hl=ko"
 
 # Site Footer
 footer:
@@ -139,7 +139,7 @@ footer:
       # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      url: "https://www.facebook.com/yoonsik.lim/"
+      # url: "https://www.facebook.com/yoonsik.lim/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/AmSoMad"
@@ -151,7 +151,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/yoonsiklim/?hl=ko"
+      # url: "https://www.instagram.com/yoonsiklim/?hl=ko"
 
 
 # Reading Files
