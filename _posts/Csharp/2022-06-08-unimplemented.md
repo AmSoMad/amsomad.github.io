@@ -26,6 +26,14 @@ endpoint에 서비스를 선언했는지 확인
 
 endpoints.MapGrpcService<GreeterService>();
 
+
+protoBuf 파일확인
+
+greeter.proto ->
+package greeter; 
+클라이언트와 서비스부분에 페키지명이 일치하여야 한다.
+
+
 ```
 
 
