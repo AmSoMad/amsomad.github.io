@@ -92,8 +92,15 @@
 
       &.current,
       &.current.disabled {
-        color: #fff;
-        background: $primary-color;
+        //color: #fff;
+        color: $lightpurple-btn-color-border;
+        //background: $primary-color;
+        background: $lightpurple-btn-color;
+      }
+
+      &.current.hover {
+        color : $lightpurple-color-font;
+        background : $boldpurple-btn-color-hover-arrow
       }
 
       &.disabled {
