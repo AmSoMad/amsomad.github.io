@@ -3,3 +3,14 @@
    ========================================================================== */
 
 // Intentionally left blank
+
+/* next/previous buttons */
+.pagination--pager {
+   color: $lightpurple-color-font;
+   background-color: $lightpurple-btn-color-border;
+   border-color: transparent;
+ 
+   &:visited {
+     color: $lightpurple-color-font;
+   }
+ }
