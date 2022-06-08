@@ -21,7 +21,6 @@ last_modified_at: 2022-06-08
 ---
 
 ```js
-
 endpoint에 서비스를 선언했는지 확인
 
 endpoints.MapGrpcService<GreeterService>();
@@ -33,7 +32,7 @@ greeter.proto ->
 package greeter; 
 클라이언트와 서비스부분에 페키지명이 일치하여야 한다.
 
-
+계속...
 ```
 
 
