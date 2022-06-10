@@ -177,7 +177,7 @@
 /*
      Priority plus navigation
      ========================================================================== */
-
+속리산국립공원천왕봉코스
 .greedy-nav {
   position: relative;
   display: -webkit-box;
@@ -254,7 +254,8 @@
         left: 0;
         bottom: 0;
         height: 4px;
-        background: $primary-color;
+        //background: $primary-color;
+        background : $lightpurple-btn-color;
         width: 100%;
         -webkit-transition: $global-transition;
         transition: $global-transition;
