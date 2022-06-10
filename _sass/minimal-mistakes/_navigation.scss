@@ -453,7 +453,13 @@
   font-size: 1.25rem;
 
   a {
-    color: inherit;
+    //color: inherit;
+    color : #4e91a5
+  }
+
+  &:hover {
+    //color: $masthead-link-color-hover;
+    color : $lightpurple-btn-color
   }
 
   .active {
