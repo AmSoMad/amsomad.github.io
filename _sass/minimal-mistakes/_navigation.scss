@@ -198,7 +198,8 @@
     transition: none;
 
     &:hover {
-      color: $masthead-link-color-hover;
+      //color: $masthead-link-color-hover;
+      color : $lightpurple-btn-color
     }
 
     &.site-logo {
