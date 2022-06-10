@@ -18,11 +18,11 @@ last_modified_at: 2022-06-10
 ---
 
 
-## 😬 안드로이드 App을 통한 gRPC 통신방법 🏭👩‍🏭👨‍🏭
+# 😬 안드로이드 App을 통한 gRPC 통신방법 🏭👩‍🏭👨‍🏭
 
 ---
 
-# 1. build.Gradle(Project & Module) 추가
+## 1. build.Gradle(Project & Module) 추가
 
 Project 부분에 
 
@@ -89,7 +89,7 @@ protobuf {
 }
 
 ```
-# 2. AndroidManifest 수정
+## 2. AndroidManifest 수정
 ```js
 manifest.AndroidManifest.xml 에 추가하자.
 
@@ -102,7 +102,7 @@ manifest.AndroidManifest.xml 에 추가하자.
 
 ---
 
-# 3. proto파일 추가
+## 3. proto파일 추가
 ```js
 Create Directory Folder
 src/main/kotlin  -> Example.proto 생성
@@ -143,12 +143,12 @@ grpc 프로토파일을 생성해주고
 ```
 
 
-# 4. Make Project
+## 4. Make Project
 
 망치를 눌러 Build를 하면 Java 폴더 하나가 generated 되면서 생성된다.<br>
 
 
-# 5. 통신 실행
+## 5. 통신 실행
 
 서비스 선언
 ```java
