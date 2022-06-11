@@ -3,9 +3,11 @@ main:
   - title: "Home"
     url: https://amsomad.github.io/
 
+  - title: "About"
+    url: /about/
   - title: "Category"
     url: /categories/
-    
+  
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
@@ -26,6 +28,8 @@ categories:
 
 - title: 개발
   children:
+    - title: "gRPC"
+      url: /categories/grpc/
     - title: "C#"
       url: /categories/csharp/
     - title: "자바"
