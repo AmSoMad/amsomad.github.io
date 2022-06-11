@@ -1,8 +1,8 @@
 ---
 title: "Posts by Category"
-layout: categories
+layout: category
 permalink: /categories/
-autor_profile: true
+author_profile: true
 sidebar:
   nav: "categories"
 ---
