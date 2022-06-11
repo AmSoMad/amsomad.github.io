@@ -118,7 +118,9 @@ Activity에서 import 할때 쓰는 경로
 ```
 ```js
 package com.grpc.Example; 패키지명이 중요하다. 
-기존 패키지명과 같을경우 충돌난다.
+기존 안드로이드 패키지명과 같을경우 충돌난다.
+또한 클라이언트 & 서비스 와 이 패키지명이 일치해야한다.
+
 ```
 ```js
 message ExampleRequest {
