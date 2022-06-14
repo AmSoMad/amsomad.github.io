@@ -39,10 +39,15 @@ last_modified_at: 2022-06-14
 <summary>View contents</summary>
 
 **[`all`](#all)**
+
 **[`allEqual`](#allequal)**
+
 **[`any`](#any)**
+
 **[`bifurcate`](#bifurcate)**
+
 **[`bifurcateBy`](#bifurcateby)**
+
 **[`chunk`](#chunk)**
 **[`compact`](#compact)**
 **[`countBy`](#countby)**
