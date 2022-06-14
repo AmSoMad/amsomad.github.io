@@ -38,97 +38,98 @@ last_modified_at: 2022-06-14
 <details>
 <summary>View contents</summary>
 
-* [`all`](#all)
-* [`allEqual`](#allequal)
-* [`any`](#any)
-* [`bifurcate`](#bifurcate)
-* [`bifurcateBy`](#bifurcateby)
-* [`chunk`](#chunk)
-* [`compact`](#compact)
-* [`countBy`](#countby)
-* [`countOccurrences`](#countoccurrences)
-* [`concat`](#concat)
-* [`corresponds`](#corresponds)
-* [`crossProduct`](#crossproduct)
-* [`cycle`](#cycle)
-* [`difference`](#difference)
-* [`differenceBy`](#differenceby)
-* [`differenceWith`](#differencewith)
-* [`distinct`](#distinct)
-* [`drop`](#drop)
-* [`dropRight`](#dropright)
-* [`dropRightWhile`](#droprightwhile)
-* [`dropWhile`](#dropwhile)
-* [`endsWith`](#endsWith)
-* [`everyNth`](#everynth)
-* [`existsUnique`](#existsunique)
-* [`filterNonUnique`](#filternonunique)
-* [`filterNonUniqueBy`](#filternonuniqueby)
-* [`findLast`](#findlast)
-* [`findLastIndex`](#findlastindex)
-* [`forEachRight`](#foreachright)
-* [`groupBy`](#groupby)
-* [`hasDuplicates`](#hasDuplicates)
-* [`hasSubList`](#hassubList)
-* [`head`](#head)
-* [`indexOfAll`](#indexofall)
-* [`initial`](#initial)
-* [`initialize2DList`](#initialize2dlist)
-* [`initializeListWithRange`](#initializelistwithrange)
-* [`initializeListWithValue`](#initializelistwithvalue)
-* [`intersection`](#intersection)
-* [`intersectionBy`](#intersectionby)
-* [`intersectionWith`](#intersectionwith)
-* [`intersperse`](#intersperse)
-* [`join`](#join)
-* [`last`](#last)
-* [`longest`](#longest)
-* [`mapObject`](#mapobject)
-* [`maxN`](#maxn)
-* [`minN`](#minn)
-* [`none`](#none)
-* [`nthElement`](#nthelement)
-* [`partition`](#partition)
-* [`partitioningBy`](#partitioningBy)
-* [`permutations`](#permutations)
-* [`product`](#product)
-* [`pull`](#pull)
-* [`pullAtIndex`](#pullatindex)
-* [`pullAtValue`](#pullatvalue)
-* [`reduceSuccessive`](#reducesuccessive)
-* [`reject`](#reject)
-* [`remove`](#remove)
-* [`rotateLeft`](#rotateleft)
-* [`rotateRight`](#rotateright)
-* [`sample`](#sample)
-* [`sampleSize`](#samplesize)
-* [`segmentLength`](#segmentLength)
-* [`shank`](#shank)
-* [`shuffle`](#shuffle)
-* [`slideBy`](#slideby)
-* [`sortOrder`](#sortorder)
-* [`span`](#span)
-* [`splitAt`](#splitat)
-* [`startsWith`](#startswith)
-* [`symmetricDifference`](#symmetricdifference)
-* [`symmetricDifferenceBy`](#symmetricdifferenceby)
-* [`symmetricDifferenceWith`](#symmetricdifferencewith)
-* [`tail`](#tail)
-* [`take`](#take)
-* [`takeRight`](#takeright)
-* [`takeRightWhile`](#takerightwhile)
-* [`takeWhile`](#takewhile)
-* [`union`](#union)
-* [`unionBy`](#unionby)
-* [`unionWith`](#unionwith)
-* [`unzip`](#unzip)
-* [`without`](#without)
-* [`zip`](#zip)
-* [`zipAll`](#zipall)
-* [`zipKeysValues`](#zipkeysvalues)
-* [`zipWith`](#zipwith)
-* [`zipWithIndex`](#zipwithindex)
-* [`zipWithNext`](#zipwithnext)
+**[`all`](#all)**
+**[`allEqual`](#allequal)**
+**[`any`](#any)**
+**[`bifurcate`](#bifurcate)**
+**[`bifurcateBy`](#bifurcateby)**
+**[`chunk`](#chunk)**
+**[`compact`](#compact)**
+**[`countBy`](#countby)**
+**[`countOccurrences`](#countoccurrences)**
+**[`concat`](#concat)**
+**[`corresponds`](#corresponds)**
+**[`crossProduct`](#crossproduct)**
+**[`cycle`](#cycle)**
+**[`difference`](#difference)**
+**[`differenceBy`](#differenceby)**
+**[`differenceWith`](#differencewith)**
+**[`distinct`](#distinct)**
+**[`drop`](#drop)**
+**[`dropRight`](#dropright)**
+**[`dropRightWhile`](#droprightwhile)**
+**[`dropWhile`](#dropwhile)**
+**[`endsWith`](#endsWith)**
+**[`everyNth`](#everynth)**
+**[`existsUnique`](#existsunique)**
+**[`filterNonUnique`](#filternonunique)**
+**[`filterNonUniqueBy`](#filternonuniqueby)**
+**[`findLast`](#findlast)**
+**[`findLastIndex`](#findlastindex)**
+**[`forEachRight`](#foreachright)**
+**[`groupBy`](#groupby)**
+**[`hasDuplicates`](#hasDuplicates)**
+**[`hasSubList`](#hassubList)**
+**[`head`](#head)**
+**[`indexOfAll`](#indexofall)**
+**[`initial`](#initial)**
+**[`initialize2DList`](#initialize2dlist)**
+**[`initializeListWithRange`](#initializelistwithrange)**
+**[`initializeListWithValue`](#initializelistwithvalue)**
+**[`intersection`](#intersection)**
+**[`intersectionBy`](#intersectionby)**
+**[`intersectionWith`](#intersectionwith)**
+**[`intersperse`](#intersperse)**
+**[`join`](#join)**
+**[`last`](#last)**
+**[`longest`](#longest)**
+**[`mapObject`](#mapobject)**
+**[`maxN`](#maxn)**
+**[`minN`](#minn)**
+**[`none`](#none)**
+**[`nthElement`](#nthelement)**
+**[`partition`](#partition)**
+**[`partitioningBy`](#partitioningBy)**
+**[`permutations`](#permutations)**
+**[`product`](#product)**
+**[`pull`](#pull)**
+**[`pullAtIndex`](#pullatindex)**
+**[`pullAtValue`](#pullatvalue)**
+**[`reduceSuccessive`](#reducesuccessive)**
+**[`reject`](#reject)**
+**[`remove`](#remove)**
+**[`rotateLeft`](#rotateleft)**
+**[`rotateRight`](#rotateright)**
+**[`sample`](#sample)**
+**[`sampleSize`](#samplesize)**
+**[`segmentLength`](#segmentLength)**
+**[`shank`](#shank)**
+**[`shuffle`](#shuffle)**
+**[`slideBy`](#slideby)**
+**[`sortOrder`](#sortorder)**
+**[`span`](#span)**
+**[`splitAt`](#splitat)**
+**[`startsWith`](#startswith)**
+**[`symmetricDifference`](#symmetricdifference)**
+**[`symmetricDifferenceBy`](#symmetricdifferenceby)**
+**[`symmetricDifferenceWith`](#symmetricdifferencewith)**
+**[`tail`](#tail)**
+**[`take`](#take)**
+**[`takeRight`](#takeright)**
+**[`takeRightWhile`](#takerightwhile)**
+**[`takeWhile`](#takewhile)**
+**[`union`](#union)**
+**[`unionBy`](#unionby)**
+**[`unionWith`](#unionwith)**
+**[`unzip`](#unzip)**
+**[`without`](#without)**
+**[`zip`](#zip)**
+**[`zipAll`](#zipall)**
+**[`zipKeysValues`](#zipkeysvalues)**
+**[`zipWith`](#zipwith)**
+**[`zipWithIndex`](#zipwithindex)**
+**[`zipWithNext`](#zipwithnext)**
+
 
 </details>
 
@@ -139,26 +140,26 @@ last_modified_at: 2022-06-14
 <details>
 <summary>View contents</summary>
 
-* [`allOf`](#allof)
-* [`andThen`](#andthen)
-* [`anyOf`](#anyof)
-* [`applyFirst`](#applyfirst)
-* [`applySecond`](#applysecond)
-* [`compose`](#compose)
-* [`constant`](#constant)
-* [`curry`](#curry)
-* [`diverge`](#diverge)
-* [`identity`](#identity)
-* [`isIn`](#isIn)
-* [`lift`](#lift)
-* [`memoize`](#memoize)
-* [`noneOf`](#noneof)
-* [`retry`](#retry)
-* [`sequence`](#sequence)
-* [`swapArgs`](#swapargs)
-* [`time`](#time)
-* [`uncurry`](#uncurry)
-* [`unlift`](#unlift)
+**[`allOf`](#allof)**
+**[`andThen`](#andthen)**
+**[`anyOf`](#anyof)**
+**[`applyFirst`](#applyfirst)**
+**[`applySecond`](#applysecond)**
+**[`compose`](#compose)**
+**[`constant`](#constant)**
+**[`curry`](#curry)**
+**[`diverge`](#diverge)**
+**[`identity`](#identity)**
+**[`isIn`](#isIn)**
+**[`lift`](#lift)**
+**[`memoize`](#memoize)**
+**[`noneOf`](#noneof)**
+**[`retry`](#retry)**
+**[`sequence`](#sequence)**
+**[`swapArgs`](#swapargs)**
+**[`time`](#time)**
+**[`uncurry`](#uncurry)**
+**[`unlift`](#unlift)**
 
 </details>
 
@@ -169,17 +170,17 @@ last_modified_at: 2022-06-14
 <details>
 <summary>View contents</summary>
 
-* [`asSequence`](#assequence)
-* [`filter`](#filter)
-* [`flatMap`](#flatmap)
-* [`forever`](#forever)
-* [`getOrDefault`](#getordefault)
-* [`lift`](#lift)
-* [`map`](#map)
-* [`map2`](#map2)
-* [`sequence`](#sequence)
-* [`sequenceCatching`](#sequencecatching)
-* [`test`](#test)
+**[`asSequence`](#assequence)**
+**[`filter`](#filter)**
+**[`flatMap`](#flatmap)**
+**[`forever`](#forever)**
+**[`getOrDefault`](#getordefault)**
+**[`lift`](#lift)**
+**[`map`](#map)**
+**[`map2`](#map2)**
+**[`sequence`](#sequence)**
+**[`sequenceCatching`](#sequencecatching)**
+**[`test`](#test)**
 
 </details>
 
@@ -190,21 +191,21 @@ last_modified_at: 2022-06-14
 <details>
 <summary>View contents</summary>
 
-* [`merge`](#merge)
-* [`pick`](#pick)
-* [`split`](#split)
-* [`toEnumMap`](#toenummap)
+**[`merge`](#merge)**
+**[`pick`](#pick)**
+**[`split`](#split)**
+**[`toEnumMap`](#toenummap)**
 
 </details>
 
 #### Related projects
 
-* [30 Seconds of Code (JavaScript)](https://github.com/30-seconds/30-seconds-of-code)
-* [30 Seconds of Knowledge](https://github.com/petrovicstefanrs/30_seconds_of_knowledge)
-* [30 Seconds of Java](https://github.com/shekhargulati/30-seconds-of-java)
-* [30 Seconds of React](https://github.com/30-seconds/30-seconds-of-react)
-* [30 Seconds of Python](https://github.com/kriadmin/30-seconds-of-python-code)
-* [30 Seconds of PHP](https://github.com/appzcoder/30-seconds-of-php-code)
+**[30 Seconds of Code (JavaScript)](https://github.com/30-seconds/30-seconds-of-code)**
+**[30 Seconds of Knowledge](https://github.com/petrovicstefanrs/30_seconds_of_knowledge)**
+**[30 Seconds of Java](https://github.com/shekhargulati/30-seconds-of-java)**
+**[30 Seconds of React](https://github.com/30-seconds/30-seconds-of-react)**
+**[30 Seconds of Python](https://github.com/kriadmin/30-seconds-of-python-code)**
+**[30 Seconds of PHP](https://github.com/appzcoder/30-seconds-of-php-code)**
 
 ---
 
