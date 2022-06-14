@@ -30,186 +30,6 @@ last_modified_at: 2022-06-14
 **Note:** This project is inspired by, but in no way affiliated with, <br>
 [30 Seconds of Code](https://github.com/30-seconds/30-seconds-of-code).
 
-## Table of Contents
-
-## KeyWord List
-
-`Functions operating on the most fundamental data structure: List.`
-
-
-
-<details>
-<summary>View contents</summary>
-
-*[`all`](#all)*  <br>
-**[`allEqual`](#allequal)** <br>
-**[`any`](#any)** <br>
-**[`bifurcate`](#bifurcate)** <br>
-**[`bifurcateBy`](#bifurcateby)** <br>
-**[`chunk`](#chunk)** <br>
-**[`compact`](#compact)** <br>
-**[`countBy`](#countby)** <br>
-**[`countOccurrences`](#countoccurrences)** <br>
-**[`concat`](#concat)** <br>
-**[`corresponds`](#corresponds)** <br>
-**[`crossProduct`](#crossproduct)** <br>
-**[`cycle`](#cycle)** <br>
-**[`difference`](#difference)** <br>
-**[`differenceBy`](#differenceby)** <br>
-**[`differenceWith`](#differencewith)** <br>
-**[`distinct`](#distinct)** <br>
-**[`drop`](#drop)** <br>
-**[`dropRight`](#dropright)** <br>
-**[`dropRightWhile`](#droprightwhile)** <br>
-**[`dropWhile`](#dropwhile)** <br>
-**[`endsWith`](#endsWith)** <br>
-**[`everyNth`](#everynth)** <br>
-**[`existsUnique`](#existsunique)** <br>
-**[`filterNonUnique`](#filternonunique)** <br>
-**[`filterNonUniqueBy`](#filternonuniqueby)** <br>
-**[`findLast`](#findlast)** <br>
-**[`findLastIndex`](#findlastindex)** <br>
-**[`forEachRight`](#foreachright)** <br>
-**[`groupBy`](#groupby)** <br>
-**[`hasDuplicates`](#hasDuplicates)** <br>
-**[`hasSubList`](#hassubList)** <br>
-**[`head`](#head)** <br>
-**[`indexOfAll`](#indexofall)** <br>
-**[`initial`](#initial)** <br>
-**[`initialize2DList`](#initialize2dlist)** <br>
-**[`initializeListWithRange`](#initializelistwithrange)** <br>
-**[`initializeListWithValue`](#initializelistwithvalue)** <br>
-**[`intersection`](#intersection)** <br>
-**[`intersectionBy`](#intersectionby)** <br>
-**[`intersectionWith`](#intersectionwith)** <br>
-**[`intersperse`](#intersperse)** <br>
-**[`join`](#join)** <br>
-**[`last`](#last)** <br>
-**[`longest`](#longest)** <br>
-**[`mapObject`](#mapobject)** <br>
-**[`maxN`](#maxn)** <br>
-**[`minN`](#minn)** <br>
-**[`none`](#none)** <br>
-**[`nthElement`](#nthelement)** <br>
-**[`partition`](#partition)** <br>
-**[`partitioningBy`](#partitioningBy)** <br>
-**[`permutations`](#permutations)** <br>
-**[`product`](#product)** <br>
-**[`pull`](#pull)** <br>
-**[`pullAtIndex`](#pullatindex)** <br>
-**[`pullAtValue`](#pullatvalue)** <br>
-**[`reduceSuccessive`](#reducesuccessive)** <br>
-**[`reject`](#reject)** <br>
-**[`remove`](#remove)** <br>
-**[`rotateLeft`](#rotateleft)** <br>
-**[`rotateRight`](#rotateright)** <br>
-**[`sample`](#sample)** <br>
-**[`sampleSize`](#samplesize)** <br>
-**[`segmentLength`](#segmentLength)** <br>
-**[`shank`](#shank)** <br>
-**[`shuffle`](#shuffle)** <br>
-**[`slideBy`](#slideby)** <br>
-**[`sortOrder`](#sortorder)** <br>
-**[`span`](#span)** <br>
-**[`splitAt`](#splitat)** <br>
-**[`startsWith`](#startswith)** <br>
-**[`symmetricDifference`](#symmetricdifference)** <br>
-**[`symmetricDifferenceBy`](#symmetricdifferenceby)** <br>
-**[`symmetricDifferenceWith`](#symmetricdifferencewith)** <br>
-**[`tail`](#tail)** <br>
-**[`take`](#take)** <br>
-**[`takeRight`](#takeright)** <br>
-**[`takeRightWhile`](#takerightwhile)** <br>
-**[`takeWhile`](#takewhile)** <br>
-**[`union`](#union)** <br>
-**[`unionBy`](#unionby)** <br>
-**[`unionWith`](#unionwith)** <br>
-**[`unzip`](#unzip)** <br>
-**[`without`](#without)** <br>
-**[`zip`](#zip)** <br>
-**[`zipAll`](#zipall)** <br>
-**[`zipKeysValues`](#zipkeysvalues)** <br>
-**[`zipWith`](#zipwith)** <br>
-**[`zipWithIndex`](#zipwithindex)** <br>
-**[`zipWithNext`](#zipwithnext)** <br>
-
-</details>
-
-### Function
-
-`Kotlin's first class functions make it easy to manipulate functions.`
-
-<details>
-<summary>View contents</summary>
-
-**[`allOf`](#allof)** <br>
-**[`andThen`](#andthen)** <br>
-**[`anyOf`](#anyof)** <br>
-**[`applyFirst`](#applyfirst)** <br>
-**[`applySecond`](#applysecond)** <br>
-**[`compose`](#compose)** <br>
-**[`constant`](#constant)** <br>
-**[`curry`](#curry)** <br>
-**[`diverge`](#diverge)** <br>
-**[`identity`](#identity)** <br>
-**[`isIn`](#isIn)** <br>
-**[`lift`](#lift)** <br>
-**[`memoize`](#memoize)** <br>
-**[`noneOf`](#noneof)** <br>
-**[`retry`](#retry)** <br>
-**[`sequence`](#sequence)** <br>
-**[`swapArgs`](#swapargs)** <br>
-**[`time`](#time)** <br>
-**[`uncurry`](#uncurry)** <br>
-**[`unlift`](#unlift)** <br>
-
-</details>
-
-### Lazy
-
-`Functions operating on Kotlin's built in Lazy type.`
-
-<details>
-<summary>View contents</summary>
-
-**[`asSequence`](#assequence)** <br>
-**[`filter`](#filter)** <br>
-**[`flatMap`](#flatmap)** <br>
-**[`forever`](#forever)** <br>
-**[`getOrDefault`](#getordefault)** <br>
-**[`lift`](#lift)** <br>
-**[`map`](#map)** <br>
-**[`map2`](#map2)** <br>
-**[`sequence`](#sequence)** <br>
-**[`sequenceCatching`](#sequencecatching)** <br>
-**[`test`](#test)** <br>
-
-</details>
-
-### Map
-
-`Functions operating on Maps.`
-
-<details>
-<summary>View contents</summary>
-
-**[`merge`](#merge)** <br>
-**[`pick`](#pick)** <br>
-**[`split`](#split)** <br>
-**[`toEnumMap`](#toenummap)** <br>
-
-</details>
-
-#### Related projects
-
-**[30 Seconds of Code (JavaScript)](https://github.com/30-seconds/30-seconds-of-code)** <br>
-**[30 Seconds of Knowledge](https://github.com/petrovicstefanrs/30_seconds_of_knowledge)** <br>
-**[30 Seconds of Java](https://github.com/shekhargulati/30-seconds-of-java)** <br>
-**[30 Seconds of React](https://github.com/30-seconds/30-seconds-of-react)** <br>
-**[30 Seconds of Python](https://github.com/kriadmin/30-seconds-of-python-code)** <br>
-**[30 Seconds of PHP](https://github.com/appzcoder/30-seconds-of-php-code)** <br>
-
----
 
 ## List
 
@@ -1739,12 +1559,24 @@ inline fun <reified K : Enum<K>, V> KClass<K>.toEnumMap(function: (K) -> V): Enu
 
 ---
 
+#### Related projects
+
+**[30 Seconds of Code (JavaScript)](https://github.com/30-seconds/30-seconds-of-code)** <br>
+**[30 Seconds of Knowledge](https://github.com/petrovicstefanrs/30_seconds_of_knowledge)** <br>
+**[30 Seconds of Java](https://github.com/shekhargulati/30-seconds-of-java)** <br>
+**[30 Seconds of React](https://github.com/30-seconds/30-seconds-of-react)** <br>
+**[30 Seconds of Python](https://github.com/kriadmin/30-seconds-of-python-code)** <br>
+**[30 Seconds of PHP](https://github.com/appzcoder/30-seconds-of-php-code)** <br>
+
+---
+
 ## License
 
 MIT
 
 
 <br>
+
 
 
 
