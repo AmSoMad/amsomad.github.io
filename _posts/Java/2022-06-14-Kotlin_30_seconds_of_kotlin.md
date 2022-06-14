@@ -41,7 +41,7 @@ last_modified_at: 2022-06-14
 <details>
 <summary>View contents</summary>
 
-**[`all`](#all)**  <br>
+*[`all`](#all)*  <br>
 **[`allEqual`](#allequal)** <br>
 **[`any`](#any)** <br>
 **[`bifurcate`](#bifurcate)** <br>
