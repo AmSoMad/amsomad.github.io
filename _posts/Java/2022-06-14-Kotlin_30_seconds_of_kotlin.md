@@ -36,12 +36,12 @@ last_modified_at: 2022-06-14
 
 `Functions operating on the most fundamental data structure: List.`
 
-**[`all`](#all)**  <br>
+
 
 <details>
 <summary>View contents</summary>
 
-
+**[`all`](#all)**  <br>
 **[`allEqual`](#allequal)** <br>
 **[`any`](#any)** <br>
 **[`bifurcate`](#bifurcate)** <br>
@@ -132,8 +132,6 @@ last_modified_at: 2022-06-14
 **[`zipWith`](#zipwith)** <br>
 **[`zipWithIndex`](#zipwithindex)** <br>
 **[`zipWithNext`](#zipwithnext)** <br>
-
-
 </details>
 
 ### Function
