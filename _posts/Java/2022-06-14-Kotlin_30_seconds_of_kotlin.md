@@ -1559,7 +1559,7 @@ inline fun <reified K : Enum<K>, V> KClass<K>.toEnumMap(function: (K) -> V): Enu
 
 ---
 
-#### Related projects
+## Related projects
 
 **[30 Seconds of Code (JavaScript)](https://github.com/30-seconds/30-seconds-of-code)** <br>
 **[30 Seconds of Knowledge](https://github.com/petrovicstefanrs/30_seconds_of_knowledge)** <br>
