@@ -32,7 +32,7 @@ last_modified_at: 2022-06-14
 
 ## Table of Contents
 
-### List
+## KeyWord List
 
 `Functions operating on the most fundamental data structure: List.`
 
@@ -132,6 +132,7 @@ last_modified_at: 2022-06-14
 **[`zipWith`](#zipwith)** <br>
 **[`zipWithIndex`](#zipwithindex)** <br>
 **[`zipWithNext`](#zipwithnext)** <br>
+
 </details>
 
 ### Function
