@@ -25,9 +25,10 @@ last_modified_at: 2022-06-14
 # 30 seconds of Kotlin
 
 > Curated collection of useful Kotlin 1.3 snippets that you can understand quickly, using only stdlib functionality.
-*Snippets are optimized for readability and comprehension, sometimes at the expense of performance.* 
+> *Snippets are optimized for readability and comprehension, sometimes at the expense of performance.* 
 
-**Note:** This project is inspired by, but in no way affiliated with, [30 Seconds of Code](https://github.com/30-seconds/30-seconds-of-code).
+**Note:** This project is inspired by, but in no way affiliated with, <br>
+[30 Seconds of Code](https://github.com/30-seconds/30-seconds-of-code).
 
 ## Table of Contents
 
@@ -35,10 +36,12 @@ last_modified_at: 2022-06-14
 
 `Functions operating on the most fundamental data structure: List.`
 
+**[`all`](#all)**  <br>
+
 <details>
 <summary>View contents</summary>
 
-**[`all`](#all)**  <br>
+
 **[`allEqual`](#allequal)** <br>
 **[`any`](#any)** <br>
 **[`bifurcate`](#bifurcate)** <br>
