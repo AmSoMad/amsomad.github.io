@@ -133,10 +133,6 @@ message ExampleResponse {
   string result = 1;
 }
 
-message GrpcDecimal {
-  int64 units = 1;
-  sfixed32 nanos = 2;
-}
 service ExampleService {
   rpc UnaryCall(ExampleRequest) returns (ExampleResponse)  {}
 }
