@@ -35,6 +35,28 @@ package Center; <--
 일치해야한다.
 ```
 
+# gRPC-Web javascript
+
+## 😬 --grpc-web_out: protoc-gen-grpc-web: Plugin failed with status code 1.
+
+```js
+--grpc-web_out: protoc-gen-grpc-web: Plugin failed with status code 1.
+``` 
+
+해당오류는 다른오류가 있을 수는 있으나.
+
+```js
+protoc-gen-grpc-web-1.3.1-windows-x86_64.exe
+해당 파일명을
+protoc-gen-grpc-web.exe 로 수정하자.
+
+```
+
+
+
+
+
+
 <br>
 
 
