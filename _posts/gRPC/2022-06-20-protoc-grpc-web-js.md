@@ -60,7 +60,7 @@ Doc를 먼저 본 후 진행하자. **[https://github.com/grpc/grpc-web#code-gen
 ---
 이제 Web페이지로 이동해보자.
 
-## 😬 --grpc-web_out: protoc-gen-grpc-web: Plugin failed with status code 1.
+### [오류]😬 --grpc-web_out: protoc-gen-grpc-web: Plugin failed with status code 1.
 
 ```js
 --grpc-web_out: protoc-gen-grpc-web: Plugin failed with status code 1.
@@ -73,5 +73,7 @@ protoc-gen-grpc-web-1.3.1-windows-x86_64.exe
 해당 파일명을
 protoc-gen-grpc-web.exe 로 수정하자.
 ```
+
+
 
 **Note:** `만들고나니 내것이 아니었다.` 
