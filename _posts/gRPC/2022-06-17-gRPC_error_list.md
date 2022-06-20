@@ -20,7 +20,7 @@ last_modified_at: 2022-06-17
 ## 😬 Proto 파일 에러
 ```java
 Grpc.AspNetCore.Server.Internal.ServerCallHandlerFactory: Information: Service '패키지명' is unimplemented.
-```
+``` 
 
 해당오류는 패키지명이 서버와 클라이언트간 불일치로인한 에러 
 
