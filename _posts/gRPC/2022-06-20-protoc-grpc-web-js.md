@@ -31,14 +31,15 @@ last_modified_at: 2022-06-22
 
 ### 준비물 2개
 
-Doc를 먼저 본 후 진행하자. **[https://github.com/grpc/grpc-web#code-generator-plugin](https://github.com/grpc/grpc-web#code-generator-plugin)** <br>
+Doc를 먼저 본 후 진행하자.   <br>
+**[https://github.com/grpc/grpc-web#code-generator-plugin](https://github.com/grpc/grpc-web#code-generator-plugin)** <br>
 해당링크에서 다운을 받자. <br>
 
-> 1. protoc 컴파일러 다운로드
->> **[https://github.com/protocolbuffers/protobuf/releases](https://github.com/protocolbuffers/protobuf/releases)** 
+> 1. protoc 컴파일러 다운로드   <br>
+>> **[https://github.com/protocolbuffers/protobuf/releases](https://github.com/protocolbuffers/protobuf/releases)**    <br>
 >> 다운을 받고 환경 변수도 등록해주자. <br>
 >> ex) C:\protoc\protoc-3.20.1-win64\bin <br>
-> 2. protoc-gen-grpc-web 다운로드
+> 2. protoc-gen-grpc-web 다운로드   <br>
 >> **[https://github.com/grpc/grpc-web/releases](https://github.com/grpc/grpc-web/releases)**  <br>
 >> 여기서 컴파일러를 다운받고 <br>
 >> 다운을 받고 환경 변수도 등록해주자.  <br>
@@ -111,6 +112,7 @@ protoc-gen-grpc-web.exe 로 수정하자.
 > 그 이유들은 너무나도 많다.  <br>
 
 > 해보려는 사람들에게 내가했던 삽질을 공유한다.  <br>
+> 뒤를 부탁합니다.
 
 ```js
 // proto 컴파일
