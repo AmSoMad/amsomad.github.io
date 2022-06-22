@@ -36,12 +36,13 @@ Doc를 먼저 본 후 진행하자. **[https://github.com/grpc/grpc-web#code-gen
 
 > 1. protoc 컴파일러 다운로드
 >> **[https://github.com/protocolbuffers/protobuf/releases](https://github.com/protocolbuffers/protobuf/releases)** 
->> 다운을 받고 환경 변수도 등록해주자.
->> ex) C:\protoc\protoc-3.20.1-win64\bin
+>> 다운을 받고 환경 변수도 등록해주자. <br>
+>> ex) C:\protoc\protoc-3.20.1-win64\bin <br>
 > 2. protoc-gen-grpc-web 다운로드
->> **[https://github.com/grpc/grpc-web/releases](https://github.com/grpc/grpc-web/releases)** 여기서 컴파일러를 다운받고
->> 다운을 받고 환경 변수도 등록해주자.
->> ** 귀찮다면 컴파일러 옆에 같이두자.
+>> **[https://github.com/grpc/grpc-web/releases](https://github.com/grpc/grpc-web/releases)**  <br>
+>> 여기서 컴파일러를 다운받고 <br>
+>> 다운을 받고 환경 변수도 등록해주자.  <br>
+>> ** 귀찮다면 컴파일러 옆에 같이두자.  <br>
 > 3. 버전확인 (확인)
 >> ```js
 >> protoc --version 을 쳐서 버전확인을 해본다.
@@ -70,18 +71,18 @@ Doc를 먼저 본 후 진행하자. **[https://github.com/grpc/grpc-web#code-gen
 >> // protobuf 형태인데 unary만 지원중
 >> ```
 > 5. 결과
->> 아무런 말없이 바로 나온다면 정상적으로 완료된것이다.
->> 해당폴더에 가면 
->> 프로토파일명_grpc_web_pb.js 과
->> 프로토파일명_pb.js
->> 이렇게 2개의 js파일이 나온다
->> Closure로 컴파일했을경우 
->> pb.js가 서비스명Request 및 서비스명Response 파일 2개로 나눠져서 나왔을것이다.
+>> 아무런 말없이 바로 나온다면 정상적으로 완료된것이다.  <br>
+>> 해당폴더에 가면   <br>
+>> 프로토파일명_grpc_web_pb.js 과  <br>
+>> 프로토파일명_pb.js  <br>
+>> 이렇게 2개의 js파일이 나온다  <br>
+>> Closure로 컴파일했을경우   <br>
+>> pb.js가 서비스명Request 및 서비스명Response 파일 2개로 나눠져서 나왔을것이다.  <br>
 
 
 ---
 
-이제 Web페이지로 이동해보자.
+<h1>이제 Web페이지로 이동해보자.</h1>
 
 ### [오류]😬 --grpc-web_out: protoc-gen-grpc-web: Plugin failed with status code 1.
 
@@ -103,13 +104,14 @@ protoc-gen-grpc-web.exe 로 수정하자.
 
 ---
 
-> Git 허브를 보면 CDN으로 링크 붙이다보면 되겠다~ 
-> 싶어서 삽질한 친구들 많더라.
-> 나도 해봤으나 ...........
-> 일단 안된다.
-> 그 이유들은 너무나도 많다.
+> Git 허브를 보면 CDN으로 링크 붙이다보면 되겠다~   <br>
+> 싶어서 삽질한 친구들 많더라.  <br>
+> 나도 해봤으나 ...........  <br>
+> 일단 안된다.  <br>
+> 그 이유들은 너무나도 많다.  <br>
 
-> 해보려는 사람들에게 내가했던 삽질을 공유한다.
+> 해보려는 사람들에게 내가했던 삽질을 공유한다.  <br>
+
 ```js
 // proto 컴파일
 "protoc 프로토파일명.proto --js_out=import_style=closure:. --grpc-web_out=import_style=closure,mode=grpcwebtext:."
@@ -153,10 +155,10 @@ protoc-gen-grpc-web.exe 로 수정하자.
 
 ## 🤷🏻‍♀️ 결론
 
-> Ndoe.Js 를 이용해서 TypeScript를 쓰면 브라우저에서 쉽게 가능하다. 
-> 단 프로토파일이 변경되면 수시로 컴파일해야한다. 그것도 싫다면..
-> Blazor를 쓰자 빌드할때 다 컴파일되어서 
-> ```C
+> Ndoe.Js 를 이용해서 TypeScript를 쓰면 브라우저에서 쉽게 가능하다.   <br>
+> 단 프로토파일이 변경되면 수시로 컴파일해야한다. 그것도 싫다면..  <br>
+> Blazor를 쓰자 빌드할때 다 컴파일되어서   <br>
+> ```csharp
 > @using Grpc.Net.Client
 > @using Grpc.Net.Client.Web
 > @using "csharp_namespace명";
