@@ -13,8 +13,8 @@ permalink:
 toc: true
 toc_sticky: true
  
-date: 2022-06-10
-last_modified_at: 2022-06-10
+date: 2022-06-20
+last_modified_at: 2022-06-21
 ---
 
 
@@ -28,6 +28,7 @@ Adapter를 달아주면된다.
 
 ## 1. gRPC 통신으로 받을 Class를 구성
 
+> domain > CostCenterReport.kt
 > 클래스 생성
 
 ```java
@@ -44,7 +45,10 @@ class CostCenterReport(
 ```
 
 ## 2. 반복해서 보여줄 형태 layout 생성
+
+> layout > recycler_view_item.xml
 > Layout 안에 5개의 TextView가 있다. 
+>> (5개의 값을 받아서 보여줄 계획이라서.)
 > 해당 Layout을 ArrayList로 생성하여
 > Adapter에 주입시킬것이다.
 
@@ -120,6 +124,7 @@ class CostCenterReport(
 
 ## 3. Adapter 생성
 
+> adapter>ListViewAdapter.kt
 > ArrayList를 생성한 클래스형태로 만들고 추가.
 
 ```js
@@ -146,12 +151,6 @@ class ListViewAdapter (val context: Context, val list: ArrayList<CostCenterRepor
         costCenterName.text = insertArraylist.CostCenterName
         workType.text = insertArraylist.WorkType.toString()
         measureUnit.text = insertArraylist.MeasureUnit
-
-        view.setOnClickListener(View.OnClickListener { v -> //해당 리스트 클릭시 이벤트
-            Toast.makeText(v.context, list.get(position).CostCenterName, Toast.LENGTH_SHORT)
-                .show();
-
-        })
 
         return view
 
@@ -180,6 +179,7 @@ class ListViewAdapter (val context: Context, val list: ArrayList<CostCenterRepor
 
 ## 4. gRPC통신 - ListView 생성
 
+> MainActivity
 > gRPC 통신으로 받은 Json타입의 String을 parse 한다.
 
 ```java
@@ -223,6 +223,12 @@ CoroutineScope(Dispatchers.Main).launch {
         return stringToJsonVal;
     }
 ```
+
+### 주의사항 
+
+> gRPC 통신은 비동기이기때문에 CoroutineScope{}에 담겨있다
+> adapter를 CoroutineScope 밖에서 넣어줬다면
+> 아직 값이 만들어지기 전에 주입하려 해서 에러가날것이다. 
 
 ---
 
