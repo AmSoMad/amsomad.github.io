@@ -165,7 +165,11 @@ protoc-gen-grpc-web.exe 로 수정하자.
 > @using Grpc.Net.Client.Web
 > @using "csharp_namespace명";
 > ```
-> 이렇게 추가하고 Request Message 담고 요청하면 되더라...
+> 이렇게 추가하고 Request Message 담고 요청하면 되더라...   <br>
+> **[[gRPC-Web] Blazor를 이용하여 gRPC 서비스 클라이언트 호출 방법](https://amsomad.github.io/c%23/gRPC-Web/)**
+
+
+
 
 
 
