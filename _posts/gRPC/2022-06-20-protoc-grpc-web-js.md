@@ -140,7 +140,7 @@ protoc-gen-grpc-web.exe 로 수정하자.
 // 에러가날것이다. 
  "프로토파일명_grpc_web_pb.js:90 Uncaught ReferenceError: grpc is not defined"
 
-// 해당오류를 쫒아가면
+// 해당오류를 추적을 하면
 "grpc.web.MethodDescriptor()" // 이함수가 없어서 발생하는것이다.
 
 //grpc-web.js 파일이 있다. 
