@@ -1,5 +1,5 @@
 ---
-title: "[gRPC-Web] gRPC-Web 브라우져에서 사용하기"
+title: "[gRPC-Web] gRPC-Web 브라우저에서 사용하기"
 excerpt: "gRPC-web 구현"
 
 categories:
