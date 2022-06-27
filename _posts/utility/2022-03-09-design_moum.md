@@ -1,5 +1,5 @@
 ---
-title: "[디자인]Web개발 필요한 사이트 모음 - 22.04.27"
+title: "[디자인]Web개발 필요한 사이트 모음 - 22.06.27"
 excerpt: "디자인부터 기능 라이브러리까지 모아보자"
 
 categories:
@@ -14,12 +14,13 @@ toc: true
 toc_sticky: true
  
 date: 2022-03-09
-last_modified_at: 2022-04-27
+last_modified_at: 2022-06-27
 ---
 
 # 🐐 Web개발 필요한 사이트 모음
 
 > 계속해서 추가해보자.
+> Adobe의 충격적인 무료출시
 
 # 1️⃣ Color 색상
 
@@ -161,6 +162,17 @@ last_modified_at: 2022-04-27
 
 # 3️⃣ 디자인 & Template
 
+## Adobe Express
+
+> [https://www.adobe.com/express/](https://www.adobe.com/express/)
+> 
+> Adobe에서 웹버전으로 새롭게 출시했다.<br>
+> 영상편집 (최대 30초씩 25컷) 부터 많은것들을 <br>
+>  - 인스타 스토리나 포스터 또는 로고 전단지 등등
+> 무료로도 충분히 가능하다.
+> 배경지우기, Gif로 변환, 비디오 크기조정 등 많은기능을 무료로 출시했다.
+> 많이들 사용하세요~
+
 ## 웹쟁이
 
 > [https://www.webjangi.com/](https://www.webjangi.com/)
@@ -300,6 +312,23 @@ new TypeIt("#element", {
 > Codepen에서 [scrollout](https://codepen.io/search/pens?q=scrollout) 이라 검색하니 딱 뭔지 알겠다<br>
 > 스크롤 내리면서이미지나 텍스트가 사라지거나 보여지는 효과들 <br>
 > github : [https://github.com/scroll-out/scroll-out](https://github.com/scroll-out/scroll-out)
+
+## Vizzu.js
+
+> [https://lib.vizzuhq.com/0.3.0/](https://lib.vizzuhq.com/0.3.0/)
+>
+> 애니메이션 차트, 데이터 스토리 및 대화형 탐색기를 만들 수 있는 무료 오픈 소스 Javascript 라이브러리이다.<br>
+> 문서를 보면서 와 이기능 넣고싶다 하는 생각이 많이든다.<br>
+> github : [https://github.com/vizzuhq/vizzu-lib](https://github.com/vizzuhq/vizzu-lib)
+
+## Chart.js
+
+> [https://www.chartjs.org/docs/latest/](https://www.chartjs.org/docs/latest/)
+>
+> 웹상에서 정적인 차트를 그릴경우 자주사용<br>
+> 사용법이 쉽고 데이터 넣고빼는게 그나마 쉬운편이다.<br>
+> github : [https://github.com/chartjs/Chart.js](https://github.com/chartjs/Chart.js)
+
 
 
 #
