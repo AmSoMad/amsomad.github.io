@@ -11,7 +11,7 @@
 $sans-serif: 'Noto Sans KR';
 $monospace: 'Ubuntu Mono';
 //메인 폰트 설정
-$customFontStyle : 'D2Coding';
+$customFontStyle : 'ulsanjunggu';
 
 $type-size-4-5: 1.12em !default; // Ubuntu Mono is a bit small
 
@@ -29,9 +29,9 @@ $type-size-4-5: 1.12em !default; // Ubuntu Mono is a bit small
   font-style: normal;
 }
 @font-face {
-  font-family: 'PyeongChangPeace-Light';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Light.woff2') format('woff2');
-  font-weight: 300;
+  font-family: 'ulsanjunggu';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ulsanjunggu.woff2') format('woff2');
+  font-weight: normal;
   font-style: normal;
 }
 @import url(https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff);
