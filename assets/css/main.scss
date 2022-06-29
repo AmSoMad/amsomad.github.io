@@ -11,16 +11,16 @@
 $sans-serif: 'Noto Sans KR';
 $monospace: 'Ubuntu Mono';
 //메인 폰트 설정
-$customFontStyle : 'PyeongChangPeace-Light';
+$customFontStyle : 'D2Coding';
 
 $type-size-4-5: 1.12em !default; // Ubuntu Mono is a bit small
 
 // 추가된 폰트 
 @font-face {
-    font-family: 'CookieRun-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'D2Coding';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: 'LeeSeoyun';
