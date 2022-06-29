@@ -10,6 +10,7 @@
 
 $sans-serif: 'Noto Sans KR';
 $monospace: 'Ubuntu Mono';
+$customFontStyle : 'PyeongChangPeace-Light';
 
 $type-size-4-5: 1.12em !default; // Ubuntu Mono is a bit small
 
@@ -31,6 +32,12 @@ $type-size-4-5: 1.12em !default; // Ubuntu Mono is a bit small
   font-family: 'LeeSeoyun';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff') format('woff');
   font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PyeongChangPeace-Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Light.woff2') format('woff2');
+  font-weight: 300;
   font-style: normal;
 }
 @import url(https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff);
