@@ -11,7 +11,7 @@
 $sans-serif: 'Noto Sans KR';
 $monospace: 'Ubuntu Mono';
 //메인 폰트 설정
-$customFontStyle : 'ulsanjunggu';
+$customFontStyle : 'KyoboHand';
 
 $type-size-4-5: 1.12em !default; // Ubuntu Mono is a bit small
 
@@ -29,8 +29,8 @@ $type-size-4-5: 1.12em !default; // Ubuntu Mono is a bit small
   font-style: normal;
 }
 @font-face {
-  font-family: 'ulsanjunggu';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ulsanjunggu.woff2') format('woff2');
+  font-family: 'KyoboHand';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
