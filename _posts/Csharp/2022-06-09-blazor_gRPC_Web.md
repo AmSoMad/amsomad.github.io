@@ -40,16 +40,16 @@ last_modified_at: 2022-06-27
 
 .Net5
 > Startup.cs 추가
-> 1. ***ConfigureServices*** 에서  ***service.addCors();*** 추가
-> 2. ***Configure*** 에서 ***app.UseGrpcWeb();*** , ***app.UseCors();*** 를 추가한다.
->> ***app.UseRouting();*** 과 ***app.UseEndpoints()*** 사이에 추가해야한다.
-> 3. ***EndPoints*** 에 endpoints.MapGrpcService<GreeterService>().EnableGrpcWeb();
->> 서비스부분에 ***EnableGrpcWeb()*** 추가
+> 1. ***ConfigureServices*** 에서  ***service.addCors();*** 추가 <br>
+> 2. ***Configure*** 에서 ***app.UseGrpcWeb();*** , ***app.UseCors();*** 를 추가한다. <br>
+>> ***app.UseRouting();*** 과 ***app.UseEndpoints()*** 사이에 추가해야한다. <br>
+> 3. ***EndPoints*** 에 endpoints.MapGrpcService<GreeterService>().EnableGrpcWeb(); <br>
+>> 서비스부분에 ***EnableGrpcWeb()*** 추가 <br>
 
 .Net6
-> Program.cs 추가
-> app.UseRouting(); 다음에
-> app.UseGrpcWeb(); 를 추가한다.
+> Program.cs 추가 <br>
+> app.UseRouting(); 다음에 <br>
+> app.UseGrpcWeb(); 를 추가한다.<br>
 
 ![K-007](https://user-images.githubusercontent.com/57971757/176347618-2193efeb-3ddb-451e-a551-36c175c201e5.jpg)
 
@@ -59,7 +59,9 @@ last_modified_at: 2022-06-27
 
 ![K-002](https://user-images.githubusercontent.com/57971757/176347546-6543d907-ea7e-4772-9aa4-ae2a2a91e2ac.jpg)
 
-
+> Google.Protobuf <br>
+> Grpc.Net.Client <br>
+> Grpc.Tools <br>
 
 ---
 
@@ -95,7 +97,7 @@ service CostCenter8 {
 
 ```
 
-> Proto buffer를 생성을 해주고 빌드를 한다.
+> Proto buffer를 생성을 해주고 전체빌드를 한다.
 
 ## 4. 전체 빌드를 하여 proto파일 컴파일
 
@@ -113,45 +115,40 @@ service CostCenter8 {
 
 ## 5. blazor 페이지에 코드 구현
 <button class="btn btn-primary" @onclick="gRpc_Test">Click me</button>
-```java
+```js
+@using System.Threading.Tasks
+@using Grpc.Net.Client
+@using Grpc.Net.Client.Web
+@using Mes.CostCenterProto
 @inject IJSRuntime JSRuntime
-@code {
-    private int currentCount = 0;
+@using System.Text.Json;
+@using System.Text.Json.Serialization;
+@using Newtonsoft.Json
 
-    private void IncrementCount()
-    {
-        currentCount++;
-    }
+@code {
+
+    private string result = "";
 
     private async void gRpc_Test()
     {
-        var channel = GrpcChannel.ForAddress("http://localhost:50051", new GrpcChannelOptions
+        var channel = GrpcChannel.ForAddress("http://192.168.0.35:5215", new GrpcChannelOptions
             {
                 HttpHandler = new GrpcWebHandler(new HttpClientHandler()),
 
             });
 
-        var client = new Greet.Greeter.GreeterClient(channel);
+        var client = new CostCenter8.CostCenter8Client(channel);
 
-        var ExampleRequest = new com.example.ExampleService.ExampleServiceClient(channel);
-
-        var grpcUnaryCall= ExampleRequest.UnaryCall(new com.example.ExampleRequest
+        var reply = client.CostCenterList(new CostCenterRequest
             {
-                PageIndex = 1,
-                PageSize = 1,
-                IsDescending = true
-            }); 
-        
-
-        var reply = client.SayHello(new Greet.HelloRequest 
-            { 
-                Name = "블레이저에서 요청" 
+                CenterType = 1
             }
         );
+        result = reply.JsonResult;
 
-        await JSRuntime.InvokeVoidAsync("console.log", "UnaryCall 결과 :", grpcUnaryCall.Result);
-        await JSRuntime.InvokeVoidAsync("console.log", "SayHello 결과 :", reply.Message);
+        string json = JsonConvert.SerializeObject(result);
 
+        await JSRuntime.InvokeVoidAsync("console.log", "CostCenterList 결과 :", json);
     }
 
 }
@@ -169,6 +166,8 @@ Microsoft.AspNetCore.Hosting.Diagnostics: Information: Request finished HTTP/2 P
 ```
 
 ---
+
+![K-009](https://user-images.githubusercontent.com/57971757/176359416-b9b2fd79-a0c4-49e8-bb3b-a119ba211b33.jpg)
 
 성공!!!
 <br>
