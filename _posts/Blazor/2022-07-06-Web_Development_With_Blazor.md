@@ -154,6 +154,57 @@ Blazor 애플리케이션을 테스트하는 기본 방법은 현재 없습니�
 >> 다른 풍부한 책과 영상 카탈로그의 번들코드도 포함되어 있으니 참고하자.
 > 5. 컬러이미지는 **[ColorImages.pdf](https://static.packt-cdn.com/downloads/9781800208728_ColorImages.pdf)**
 
+---
+
+# 🦝 Chapter 1
+## 🦝 Introducting Blazor (Blazor의 탄생)
+
+Blazor는 오픈 소스 웹 UI SPA 프레임워크이다. <br>
+> SPA - Single Page Application <br>
+> UI - User Interface <br>
+> PROGRAMMING LANGUAGE - C# <br>
+> WEB FRAMEWORK - Blazor <br>
+
+쉽게 말을하자면 Bindings, Event, Forms and validation, <br>
+Injection, debugging 등등 많은 기능을 완벽하게 지원을 한다. <br>
+즉 HTML, CSS 및 C#을 사용하여 대화형 SPA 웹 애플리케이션을 <br>
+만들수 있단 뜻이다. <br>
+
+때는 **[2017년 NDC 오슬로에서 열린 개발자 콘퍼런스](https://www.youtube.com/watch?v=MiLAE6HMr10&list=PL03Lrmd9CiGewi0lbnahxEpisoP5WZocX&index=145)** 에서 Steve Sanderson가 발표했다. <br>
+제목이 'Web Apps can't really do *that*, can they?' <br>
+번역을해보면 웹앱은 할수없잖아 그치? 란다..<br>
+
+그는 Microsoft의 ASP.NET Team에 있을때다. <br>
+하지만 스티브는 데모를 보여주고 싶었고, 생각을 해낸 것이 <br>
+웹어셈블리에서 C#을 실행하는게 가능할까? 였다 한다.<br>
+Github에서 'Dot Net Anywhere' 라고 불리는 오래된 inactive 프로젝트를 <br>
+발견을 했고 그것은 C 로 작성이 되었으며 C코드를 웹어셈블리로 컴파일 하기위해 <br>
+(방금 우리가 한거처럼 유사한 형태로) 도구를 사용을 했다. <br>
+
+그는 브라우저 안에서 간단한 콘솔앱을 실행했다. <br>
+이미 이것만으로도 엄청난 데모였지만 더 나아가서 <br>
+" 이 위에 간단한 프레임워크를 만들 수 있을까? " 라고 생각을했고, <br>
+Tolling 작업도 알아보았다. <br>
+
+Session이 시작되면 작업 샘플을 사용하여 새로운 프로젝트를 만들고, <br>
+Tooling 지원이 뛰어난 Todo-list를 만들고, <br>
+브라우저 내에서 프로젝트를 실행하였습니다. <br>
+
+Damaian Edwards, David Fowler (둘다 .NET team) 이라는 이름의 팀원들이 <br>
+스티브가 시범을 보이려는것을 보여줫고, 머리가 터지고, 턱이빠지는것을 묘사했다. <br>
+그리고 그렇게 Blazor의 원형이 탄생한 것이다. <br>
+
+Blazor라는 이름은 브라우저(Browser)와 Razor(combine code와 HTML을 결합하는 기술)의 <br>
+합성어에서 유래됬으며, L을 차가하면 더 좋게 들리지만 그외에 실질적인 약어는 없다. <br>
+
+각각 Blazor Server, including Blazor WebAssembly, WebWindow, and Moblie Bindings. <br>
+얘들은 몇가지 다른 형태가 있다. <br>
+
+
+
+
+
+
 
 
 
