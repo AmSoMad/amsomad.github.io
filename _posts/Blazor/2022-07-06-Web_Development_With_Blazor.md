@@ -1,5 +1,5 @@
 ---
-title: "[Blazor]Web Development With Blazor - 22.07.06"
+title: "[Blazor]Web Development With Blazor - (22.07.06 ~ ing)"
 excerpt: "Papago와 함께 Jimmy Engstrom의 Blazor에 대한 이야기"
 
 categories:
@@ -14,7 +14,7 @@ toc: true
 toc_sticky: true
  
 date: 2022-07-06
-last_modified_at: 2022-07-06
+last_modified_at: 2022-07-10
 ---
 
 # 🦝 들어가며
@@ -199,6 +199,87 @@ Blazor라는 이름은 브라우저(Browser)와 Razor(combine code와 HTML을 �
 
 각각 Blazor Server, including Blazor WebAssembly, WebWindow, and Moblie Bindings. <br>
 얘들은 몇가지 다른 형태가 있다. <br>
+
+---
+
+## 🦝 Blazor Server
+
+Blazor Server는 아래의 다이어그램처럼 SignalR을 사용하여 Client와 Server간 통신을 합니다. <br>
+
+![K-006](https://user-images.githubusercontent.com/57971757/178135596-98e6bb50-27e7-4f7b-b8c4-07051c34f938.png) <br>
+> Blazor Server 개요 <br>
+
+SignalR은 다양한 데이터 전송 수단을 사용할 수 있으며, Server 및 Client 기능에따라 <br>
+최적의 전송 프로토콜을 자동으로 선택을 합니다. <br>
+**[ASP.NET Core 개요SignalR](https://docs.microsoft.com/ko-kr/aspnet/core/signalr/introduction?view=aspnetcore-6.0)** <br>
+
+SignalR은 항상 HTML에 내장된 전송 프로토콜인 WebSockets을 사용하려합니다. <br>
+WebSocket이 활성화 되지 않다면 다른 포로토콜로 정상적으로 폴백(fall Back)이 됩니다. <br>
+(알아서 다른 프로토콜을 찾는다는 것이다.) <br>
+
+Blazor는 Componets(컴포넌트)라 불리는 재사용 가능한 UI요소를 사용하여 구축됩니다. (3장 Entity Framework Core에서 소개된다.) <br>
+각 구성요소는 C# 코드, 마크업을 포함하여 다른 구성요소를 포함할 수 있습니다. <br>
+Razor 문법을 사용하여 마크업과 C#코드를 혼합하거나 원하는 경우 C#의 모든 작업을 수행할 수도 있다. <br>
+구성요소의 경우 사용자의 상호작용(버튼클릭 혹은 트리거 등)을 통하여 업데이트 할 수 있습니다. <br>
+
+각 구성요소는 객체 상태와 모든 속성 및 값을 포함하는 DOM의 이진표현인 render tree로 렌더링됩니다. <br>
+
+render tree는 이전 render tree와 비교하여 변경된 사항을 추적한 다음 <br>
+DOM을 업데이트를 하기위해 이진 형식을 사용하여 SignalR을 통해 변경된 사항만 전송을 합니다. <br>
+
+Client 측면에서는 JavaScript의 변경된 사항을 수신하고 해당 페이지를 업데이트합니다. <br>
+이걸 기존의 ASP.NET 과 비교를해보면, 전체 페이지가 아닌 구성요소 자체만 렌더링하고 <br> 
+전체 페이지가 아닌 실제 변경 사항만 DOM으로 전송을 합니다. <br>
+
+물론 Blazor Server에는 단점도 존재를 합니다. <br>
+> 1. 렌더링 작업은 서버에서 수행되기에 항성 서버에 연결이 되어야 한다. <br>
+> 인터넷 연결이 잘못된 경우 사이트가 작동하지 않을 수 있다. <br>
+> 또한 Blazor Server를 사용하지않는 사이트와 큰차이로는 <br>
+> 페이지를 전송을 한 후 다른 페이지가 요청이 있을때 까지 연결을 끊을 수 있는데, <br>
+> Blazor를 사용하면 해당 연결(SignalR)이 항상 연결되있어야 한다. <br>
+> 2. 연결이 되있어야 하니 offline/PWA 모드는 없다. <br>
+> 3. 모든 클릭, 페이지 업데이트는 서버로 왕복해야 하므로 대기 시간이 길어질 수 있다. <br>
+> Blazor Server는 변경된 데이터만 전송을 한다. <br>
+> 느린 응답 시간을 경험해 본 적이 없다. 라고 작자는 말한다. <br>
+> 4. 서버에 연결해야 하기에 해당 서버의 로드가 증가하여 확장이 어렵다. <br>
+> 이 문제를 해결하기 위해 Azure SignalR 허브를 사용하면 지속적인 연결을 <br>
+> 처리하고, 서버가 콘텐츠 전송에 집중할 수 있다. <br>
+>  **[Azure SignalR Service란?](https://docs.microsoft.com/ko-kr/azure/azure-signalr/signalr-overview)** <br>
+>  **[ASP.NET Core용 SignalR에서 허브 사용](https://docs.microsoft.com/ko-kr/aspnet/core/signalr/hubs?view=aspnetcore-6.0)** <br>
+> 5. 실행 할 수 있으려면 ASP.NET Core를 지원하는 서버여야 한다. 
+
+허나 Blazoer Server에는 다음과 같은 장점도 있다.
+> 1. 클라이언트가 다운받는 형태가 아주 작은형태로 전송된다 물론 충분히 코드가 포함되어 있다. <br>
+> 2. 서버에서 실행중이므로 앱은 서버의 기능을 최대한 활용 할 수 있다. <br>
+> 3. 사이트가 WebAssembly를 지원하지 않는 이전 웹브라우저에도 작동한다. <br>
+> 4. 코드가 서버에서 실행되며 서버에 남아 있으므로 코드를 디컴파일 할 수 없다. <br>
+> 5. 코드는 서버(또는 클라우드)에서 실행되므로 조직 내의 서비스 및 데이터베이스에 직접 호출 할수 있다. <br>
+
+작자의 회사에는 이미 큰사이트가 준비되어 있기에 프로젝트에 Blazor Server를 사용하기로 결정했다. <br>
+고객 포털과 내부 CRM 툴이 있었다. <br>
+우리의 접근 방식은 한번에 하나의 구성요소를 가져와서 Blazor Component를 변경하는 것이었다 . <br>
+대부분의 경우 ASP.NET MVC위에 기능을 추가하는것보다 Blazor에서 Component를 리메이크(수정)하는게 <br>
+훨신 빠르다는걸 금세 알게 되었다. <br>
+
+변환을 통해 최종적으로 사용자환경(UX)는 더욱 향상되었습니다. <br>
+페이지 로딩속도가 빨라지면 전체 페이지를 대신 필요에따라 페이지의 일부를 다시 로드할 수도 있습니다. <br>
+오히려 Blazor 때문에 새로운 이슈가 발생을 했다. 그건 너무 빠르다는것 <br>
+
+아무 일도 일어나지 않았기 때문에 사용자들은 데이터가 저장되었는지 이해를 하지 못했습니다. <br>
+일이 일어났지만 사용자가 알아채기에는 너무 빨랐기 때문이지요. <br>
+갑자기, 우리는 UX와 사용자에게 무언가가 바뀌었다는 것을 어떻게 알려야 하는지에 대해 생각을 해야 했습니다. <br>
+물론 작자의 생각에는 Blazor의 매우 큰장점으로 인한 부작용이다 라고 생각한다. <br>
+
+Blazor Server만이 Blazor를 실행할 수 있는 유일한 방법은 아니다. WebAssembly를 통하여 <br>
+Client에서 실행을 할 수도 있습니다.
+
+---
+
+## 🦝 Blazor WebAssembly
+
+to be continued...
+
+
 
 
 
