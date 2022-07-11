@@ -20,6 +20,9 @@ body {
     overflow: hidden;
   }
   background-image: url("https://picsum.photos/1920/1080?random=1");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1,
