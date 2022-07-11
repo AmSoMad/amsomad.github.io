@@ -122,7 +122,7 @@ LocalStorage를 사용하거나, 종속성 주입을 사용하여 <br>
 
 ## 🦝 Chapter 13. Testing
 구성요소가 제대로 작동하는지(계속 작동하는지) 확인할 수 있도록 자동화된 테스트를 살펴봅니다. <br>
-Blazor 애플리케이션을 테스트하는 기본 방법은 현재 없습니다. 
+Blazor 애플리케이션을 테스트하는 기본 방법은 현재 없습니다. <br>
 허나 bUnit 이라는 커뮤니티 프로젝트가 존재합니다. <br>
 **[ASP.NET Core Razor에서 Blazor 구성 요소 테스트](https://docs.microsoft.com/ko-kr/aspnet/core/blazor/test?view=aspnetcore-6.0)** <br>
 **[bUnit](https://github.com/bUnit-dev/bUnit)** <br>
@@ -258,8 +258,8 @@ Client 측면에서는 JavaScript의 변경된 사항을 수신하고 해당 페
 작자의 회사에는 이미 큰사이트가 준비되어 있기에 프로젝트에 Blazor Server를 사용하기로 결정했다. <br>
 고객 포털과 내부 CRM 툴이 있었다. <br>
 우리의 접근 방식은 한번에 하나의 구성요소를 가져와서 Blazor Component를 변경하는 것이었다 . <br>
-대부분의 경우 ASP.NET MVC위에 기능을 추가하는것보다 Blazor에서 Component를 리메이크(수정)하는게 <br>
-훨신 빠르다는걸 금세 알게 되었다. <br>
+대부분의 경우 ASP.NET MVC위에 기능을 추가하는것보다 Blazor에서 Component를 <br>
+리메이크(수정)하는게 훨신 빠르다는걸 금세 알게 되었다. <br>
 
 변환을 통해 최종적으로 사용자환경(UX)는 더욱 향상되었습니다. <br>
 페이지 로딩속도가 빨라지면 전체 페이지를 대신 필요에따라 페이지의 일부를 다시 로드할 수도 있습니다. <br>
@@ -267,8 +267,9 @@ Client 측면에서는 JavaScript의 변경된 사항을 수신하고 해당 페
 
 아무 일도 일어나지 않았기 때문에 사용자들은 데이터가 저장되었는지 이해를 하지 못했습니다. <br>
 일이 일어났지만 사용자가 알아채기에는 너무 빨랐기 때문이지요. <br>
-갑자기, 우리는 UX와 사용자에게 무언가가 바뀌었다는 것을 어떻게 알려야 하는지에 대해 생각을 해야 했습니다. <br>
-물론 작자의 생각에는 Blazor의 매우 큰장점으로 인한 부작용이다 라고 생각한다. <br>
+갑자기, 우리는 UX와 사용자에게 무언가가 바뀌었다는 것을 어떻게 알려야 하는지에 대해 <br>
+생각을 해야 했습니다. 물론 작자의 생각에는 Blazor의 매우 큰장점으로 인한 부작용이다 라고 <br>
+생각한다. <br>
 
 Blazor Server만이 Blazor를 실행할 수 있는 유일한 방법은 아니다. WebAssembly를 통하여 <br>
 Client에서 실행을 할 수도 있습니다.
