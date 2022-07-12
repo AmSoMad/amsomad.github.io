@@ -293,6 +293,8 @@ to be continued...
 # 🦝 작업을 하면서..
 ## 🦝 필수 사전지식
 
+**[ASP.NET Core의 Razor Pages 소개](https://docs.microsoft.com/ko-kr/aspnet/core/razor-pages/?view=aspnetcore-6.0&tabs=visual-studio)** <br>
+
 **[ASP.NET Core용 Razor 구문 참조](https://docs.microsoft.com/ko-kr/aspnet/core/mvc/views/razor?view=aspnetcore-6.0)** <br>
 > Razor는 웹 페이지에 .NET 기반 코드를 포함하는 태그 구문입니다. Razor 구문은 <br>
 > Razor 태그, C# 및 HTML로 구성됩니다. Razor를 포함하는 파일의 확장명은 <br>
