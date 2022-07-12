@@ -1,5 +1,5 @@
 ---
-title: "[gRPC-Web] Blazor를 이용하여 gRPC 서비스 클라이언트 호출 방법"
+title: "[gRPC-Web] Blazor를 이용하여 gRPC 서비스 클라이언트 호출 방법 22-07-12"
 excerpt: "C# Blazor를 활용하여 Web에서 gRPC통신하기"
 
 categories:
@@ -14,7 +14,7 @@ toc: true
 toc_sticky: true
  
 date: 2022-06-27
-last_modified_at: 2022-06-27
+last_modified_at: 2022-07-12
 ---
 
 ## 😬 [Blazor] gRPC-WEB 활용하기 🏭👩‍🏭👨‍🏭
@@ -62,6 +62,9 @@ last_modified_at: 2022-06-27
 > Google.Protobuf <br>
 > Grpc.Net.Client <br>
 > Grpc.Tools <br>
+
+** 22.07.12 최근 패치에서 변경된 사항이 있다. 
+> Grpc.Net.Client.Web 을 추가해야한다. <br>
 
 ---
 
