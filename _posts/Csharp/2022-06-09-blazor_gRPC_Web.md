@@ -63,8 +63,8 @@ last_modified_at: 2022-07-12
 > Grpc.Net.Client <br>
 > Grpc.Tools <br>
 
-** 22.07.12 최근 패치에서 변경된 사항이 있다. 
-> Grpc.Net.Client.Web 을 추가해야한다. <br>
+** 22.07.12 변경된 사항이 있다. 
+> Grpc.Net.Client.Web <-- 이것도 추가해야한다. <br>
 
 ---
 
