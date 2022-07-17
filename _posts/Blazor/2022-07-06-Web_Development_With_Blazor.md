@@ -14,7 +14,7 @@ toc: true
 toc_sticky: true
  
 date: 2022-07-06
-last_modified_at: 2022-07-10
+last_modified_at: 2022-07-17
 ---
 
 # 🦝 들어가며
@@ -370,8 +370,45 @@ IOS와 Android 어플리케이션을 만드는데 영향을 준다. <br>
 Blazor Mobile Bindings는 Blazor와 마찬가지로 razor문법을 사용하지만 <br>
 Components는 완전히 다르다. <br>
 
+Microsoft가 Blazor와 Blazor Mobile Bindings를 모두 지원하지만, <br>
+실제로 다른 웹버전(WebAssembly, Server & WebWindow)간에 코드를 공유할수는 없다. <br>
+
+**[https://docs.microsoft.com/ko-kr/mobile-blazor-bindings/.](https://docs.microsoft.com/ko-kr/mobile-blazor-bindings/.)** <br>
+
+이와 같이 Blazor와 함께 할 수 있는 것들이 있고 이것은 시작에 불과하다. <br>
+
+## Summary
+
+지금까지 Blazor로 사용 가능한 다향한 기술에 대해 알게 되었다. <br>
+예를 들면 Server Side, Client Side(WebAssembly), Desktop, Mobile 들을 말하는데 <br>
+다음 프로젝트에 어떤 기술을 사용하여 진행을 할지에 대한 정보를 제공했다. <br>
+
+그다음으로 Blazor가 어떻게 탄생을 했고, SignalR과 WebAssembly처럼 <br>
+Blazor에서의 기본기술에 대해 설명을 했다. <br>
+또한 render tree와 DOM이 업데이트되어. Blazor가 hood아래에서. <br>
+작동하는 방해에 대해서도 알게 되었습니다. <br>
+
+곧 찾아올 챕터에서는 작자가 새로운 WebAssembly 사이트를 만들기위해 필요지식을 제공을 해줄것이다. <br>
+(여기서의 모든것은 기존 서비스가 되고있는 사이트를 업그레이드, 혹은 새로운 사이트를 뜻한다.) <br>
+
+다음 챕터는 개발 환경을 구성하는 Blazor App 을 처음 사용하는 방법을 알아보자. <br>
+
+## Further reading
+
+.NET 개발자들은 **[Uno Platform](https://platform.uno/)** 에 관심이 있을 것이다. <br>
+이걸 사용하면 XAML에서 UI를 만들고. WebAssembly를 포함해서 여러 플랫폼에 배포할 수 있다. <br>
+
+ZX Spectrum 에뮬레이터에 대한 Github는 여기서 다운받으세요 <br>
+**[https://github.com/EngstromJimmy/ZXSpectrum](https://github.com/EngstromJimmy/ZXSpectrum)** <br>
 
 
+
+---
+
+# Chapter 2
+## Creating First Blazor App
+
+to be Continued...
 
 
 
