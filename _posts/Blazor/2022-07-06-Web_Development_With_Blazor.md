@@ -278,9 +278,11 @@ Client에서 실행을 할 수도 있습니다.
 
 ## 🦝 Blazor WebAssembly
 
-to be continued...
+서버에서 Blazor를 실행하는 방식이 아닌. WebAssembly를 사용하여 웹 브라우저 내에서 <br>
+실행할 수 있습니다. <br>
 
-
+현재 C#을 WebAssembly로 컴파일을 할 방법이 없다. <br>
+대신 Microsoft에서는 모노 런타임(C로 작성된)을 가져와서 WebAssembly로 컴파일 했다<br>
 
 
 
