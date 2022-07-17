@@ -302,11 +302,27 @@ Blazor 는 직접 Javascript Interop으로 DOM을 생성하고 업데이트합�
 
 Visual Studio에서 새로운 Blazor 프로젝트를 생성을하면 <br>
 시작할때 생성되는 기본 샘플 사이트내부에. Blazor.boot.json 파일이있다. <br>
-해당 파일에는 다운로드해야 하는 63개가 dependencides되어 있다. <br>
+해당 파일에는 다운로드해야 하는 63개가 dependencies되어 있다. <br>
 
-.NET DLLs가 실행이 된다는 것은
 프로그램이 브라우져내에서 .NET Framework가 동작하기위해서 필요한 요소들을 <br>
 쓰기위해 .Net DLLs 가 작동이된다. <br>
+
+코드를 직접 작성했거나 혹은 .NET Framework으로부터 App에 필요한 요소가 있다면 <br>
+웹 브라우져에서 .NET DLLs가 실행이된다. <br>
+
+이말을 보자마자 아주그냥 욕이 튀어나욌다. <br>
+(I got a bit of a bad taste in my mouth) <br>
+이게 전부 브라우져 내에서 .Net runtime이 돌아간다고 ??????? <br>
+하지만 곧 얼마나 놀라운지 깨달았다. <br>
+
+.NET Standard DLLs을 웹브라우져에서 마음껏 쓸수가 있었다. <br>
+다음에는 WebAssembly앱이 부팅될때 어떤일이 일어나고, <br>
+어떤 순서로 코드가 실행되는지 살펴보자. <br> 
+
+
+
+
+
 
 
 
