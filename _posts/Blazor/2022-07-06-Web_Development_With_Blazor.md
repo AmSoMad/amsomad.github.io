@@ -284,6 +284,37 @@ Client에서 실행을 할 수도 있습니다.
 현재 C#을 WebAssembly로 컴파일을 할 방법이 없다. <br>
 대신 Microsoft에서는 모노 런타임(C로 작성된)을 가져와서 WebAssembly로 컴파일 했다<br>
 
+Blazor의 WebAssembly 버전은 다음 그림처럼 서버 버전과 매우 비슷하게 움직입니다.  <br>
+모든항목을 서버에서 WebAssembly로(브라우져) 옮기고 웹브라우저에서 실행을 합니다. <br>
+..Fihure 1.3.. <br>
+
+render tree는 WebAssembly에서도 생성되고 서버에서 razor pages를 실행하는대신<br>
+웹브라우져 내에서 실행이된다. <br>
+
+SignalR 대신에 WebAssembly는 직접 DOM에 Access(접근)이 불가하기에 <br>
+Blazor 는 직접 Javascript Interop으로 DOM을 생성하고 업데이트합니다. <br>
+여기서 WebAssembly로 컴파일이되는 mono runtime을 dotnet.wasm이라고 합니다. <br>
+페이지에서는 dotnet.wasm을 로드하는 javascript가 포함이 되어있습니다. <br>
+
+컴파일이 된 후 그다음에는 Blazor.boot.Json 파일을 다운로드 받습니다. <br>
+해당파일은 응용프로그램을 실행하는 데 필요한 모든 파일과 응용프로그램의 <br>
+진입점을 포함하는 JSON파일 입니다. <br>
+
+Visual Studio에서 새로운 Blazor 프로젝트를 생성을하면 <br>
+시작할때 생성되는 기본 샘플 사이트내부에. Blazor.boot.json 파일이있다. <br>
+해당 파일에는 다운로드해야 하는 63개가 dependencides되어 있다. <br>
+
+.NET DLLs가 실행이 된다는 것은
+프로그램이 브라우져내에서 .NET Framework가 동작하기위해서 필요한 요소들을 <br>
+쓰기위해 .Net DLLs 가 작동이된다. <br>
+
+
+
+
+
+
+
+
 
 
 
