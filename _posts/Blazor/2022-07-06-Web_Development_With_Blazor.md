@@ -330,6 +330,48 @@ Blazor를 위한 모든 DLL과 javascript파일도 포함시켯다. <br>
 다음은 작자가 연구한 결과의 그림이다. <br> 
 
 
+## Blazor WebAssembly VS Blazor Server
+
+어떤걸로 할까요? ㅎㅎ <br>
+항상 상황에 따라 다릅니다. <br> 
+2가지 모두 장단점을 확인을 했다. <br>
+Blazor로 포팅할 사이트가 있는경우, Blazor Server로 <br>
+이동을 하고, 포팅이 완료가 되면 WebAssembly로 이동할지 여부를 새로 결정 할 수 있다.<br>
+
+만약에가사이트가 모바일 브라우져 또는 다른 신뢰할수가 없는 사이트에 연결을 해야할경우 <br>
+Blazor Server에 지속적인 연결이 필요하므로 Blazor WebAssembly를 사용하여 <br>
+PWA(오프라인 지원)을 사용하는 것이 좋습니다. <br>
+
+WebAssembly는 다소 시작시간은 느리지만 두개의 호스팅 모델을 결합하여 두개의 월드를 <br>
+최대한 활용할 수 있는 방법이 있다. <br>
+그 내용은 9장에서 코드 및 리로스 공유에서 다룰 것이다. <br>
+
+이 질문에 대한 자세한 내용은 없으나, 장점과 단점에 대해 자세히 읽어보고 이러한 점이 <br>
+프로젝트 및 사용사례에 어떤 영향을 미치는지 알아보고 써야합니다. <br> 
+Blazor 서버 측과 클라이언트에서 실행할 수 있지만 데스크톱 및 모바일 앱은 어떻습니까? <br>
+
+Web Window와 Mobile Blazor Bindings 솔루션도 존재한다. <br>
+
+## WebWindow
+
+Steve Sanderson의 오픈소스 프로젝트인 WebWindow 라는 실험 기술이있다. <br>
+Blazor를 사용해서 Windows 응용프로그램을 만들 수 있다. <br>
+WebWindows는 이책 범위밖이지만 얼마나 좋은 기술인지 알리기위해 <br>
+"Blazor의 가능성은 끝이없다"는 걸 보여주기 위해 언급한다. <br>
+
+**[https://github.com/SteveSandersonMS/Webwindow](https://github.com/SteveSandersonMS/Webwindow)** <br>
+
+## Blazor Mobile Bindings
+
+이 기술또한 책에서 언급할 내용과는 벗어나지만 언급할 가치가 있다. <br>
+이 프로젝트는 Mobile Applications을 만드는걸 가능하게 가능하게 하여 <br>
+IOS와 Android 어플리케이션을 만드는데 영향을 준다. <br>
+
+Blazor Mobile Bindings는 Blazor와 마찬가지로 razor문법을 사용하지만 <br>
+Components는 완전히 다르다. <br>
+
+
+
 
 
 
