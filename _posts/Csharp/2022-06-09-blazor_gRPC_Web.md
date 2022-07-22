@@ -1,5 +1,5 @@
 ---
-title: "[gRPC-Web] Blazor를 이용하여 gRPC 서비스 클라이언트 호출 방법 22-07-12"
+title: "[gRPC-Web] Blazor를 이용하여 gRPC 서비스 클라이언트 호출 방법 22-07-22"
 excerpt: "C# Blazor를 활용하여 Web에서 gRPC통신하기"
 
 categories:
@@ -14,7 +14,7 @@ toc: true
 toc_sticky: true
  
 date: 2022-06-27
-last_modified_at: 2022-07-12
+last_modified_at: 2022-07-22
 ---
 
 ## 😬 [Blazor] gRPC-WEB 활용하기 🏭👩‍🏭👨‍🏭
@@ -33,6 +33,9 @@ last_modified_at: 2022-07-12
 ## 1. Blazor 앱 생성
 
 ---
+
+> 해당글은 Server 앱을 가지고얘기합니다.
+> WebAssembly 앱은 다릅니다.
 
 ![K-001](https://user-images.githubusercontent.com/57971757/176347481-5d8fb27a-d4dc-4e44-8f30-c7d5e65e34a5.jpg)
 
